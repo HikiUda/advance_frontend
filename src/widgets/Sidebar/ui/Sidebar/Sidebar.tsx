@@ -20,7 +20,7 @@ export const Sidebar: FC<SidebarProps> = (props) => {
     return (
         <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
             <button type="button" onClick={onToggle}>
-                toggle
+                {'toggle' /* eslint-disable-line */}
             </button>
             <div className={classNames(cls.switchers)}>
                 <ThemeSwitcher />
